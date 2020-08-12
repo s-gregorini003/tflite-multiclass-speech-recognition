@@ -48,7 +48,7 @@ These can be installed using `pip`.
 
 ## Credits
 
-This project was created starting from Shawn Hymel's TensorFlow Lite Tutorials ([Part 1](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-1-wake-word-feature-extraction/54e1ce8520154081a58feb301ef9d87a), [Part 2](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-2-speech-recognition-model-training/d8d04a2b60a442cf8c3fa5c0dd2a292b), [Part 3](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-3-speech-recognition-on-raspberry-pi/8a2dc7d8a9a947b4a953d37d3b271c71)). A big thanks goes to Shawn for his awesome and detailed work.
+This project was created starting from Shawn Hymel's TensorFlow Lite Tutorials ([Part 1](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-1-wake-word-feature-extraction/54e1ce8520154081a58feb301ef9d87a), [Part 2](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-2-speech-recognition-model-training/d8d04a2b60a442cf8c3fa5c0dd2a292b), [Part 3](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-3-speech-recognition-on-raspberry-pi/8a2dc7d8a9a947b4a953d37d3b271c71)). Big thanks to Shawn for his awesome and detailed work.
 
 
 ## License
