@@ -28,7 +28,7 @@ The CNNs selected are [AlexNet](http://papers.nips.cc/paper/4824-imagenet-classi
 
 ### Dependencies
 
-To deploy the trained model you need the TensorFlow Lite inference engine installed on your Raspberry Pi. Instructions to do that can be found here: https://www.tensorflow.org/lite/guide/python. Additionally, the following Python modules are required:
+To deploy the trained model you need the TensorFlow Lite inference engine installed on your Raspberry Pi. Instructions to do that can be found here: [Python quickstart](https://www.tensorflow.org/lite/guide/python). Additionally, the following Python modules are required:
 
 - `sounddevice`
 - `numpy`
