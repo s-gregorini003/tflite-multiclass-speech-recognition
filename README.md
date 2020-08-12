@@ -54,6 +54,20 @@ These can be installed using `pip`.
 
 ### Yeelight LED Bulb 1S Configuration
 
+The first step to set up the lightbulb is to download the official app and perform the initial configuration.
+
+[Yeelight](https://www.yeelight.com) App
+
+<a href="https://play.google.com/store/apps/details?id=com.yeelight.cherry&hl=it"><img alt="Get it on Google Play" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" height=60px /></a>
+
+<a href="https://apps.apple.com/it/app/yeelight/id977125608"><img alt="Download on the App Store" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" height=60px /></a>
+
+
+provision the router's SSID and password to it. After the light is connected to the router, it is visible to any device under the same network. After the conguration procedure is completed, it is possible to enable the third party control protocol directly in the app. This protocol allows the light to be managed locally (LAN connection).
+
+
+![LAN control enable process](https://github.com/s-gregorini003/tflite-multiclass-speech-recognition/blob/master/img/lan-control-enabling.png)
+
 ## Credits
 
 This project was created starting from Shawn Hymel's TensorFlow Lite Tutorials ([Part 1](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-1-wake-word-feature-extraction/54e1ce8520154081a58feb301ef9d87a), [Part 2](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-2-speech-recognition-model-training/d8d04a2b60a442cf8c3fa5c0dd2a292b), [Part 3](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-3-speech-recognition-on-raspberry-pi/8a2dc7d8a9a947b4a953d37d3b271c71)). A big thanks goes to Shawn for his awesome and detailed work.
