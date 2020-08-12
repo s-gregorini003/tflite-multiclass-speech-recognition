@@ -6,9 +6,6 @@ This project demonstrates how to use TensorFlow and Keras to train three differe
 
 
 
-
-## Usage
-
 ### Dataset
 
 The dataset used for training and validation is the [Speech Commands Dataset](https://www.tensorflow.org/datasets/catalog/speech_commands). It consists of 105 829 audio samples of 35 different words from 2 618 speakers. The length of the utterances is 1 s, they are recorded with a sample rate of 16 kHz and stored as 16-bit, single channel WAVE files. To train the networks with a less skewed dataset, 70% of the samples from the unselected classes are discarded. Therefore, the training set contains 44 926 audio files divided into 7 classes (6 selected keywords + 1 "unknown word" class).
@@ -23,9 +20,9 @@ The CNNs selected are [AlexNet](http://papers.nips.cc/paper/4824-imagenet-classi
 
 ![Investigated models architecture](https://github.com/s-gregorini003/tflite-multiclass-speech-recognition/blob/master/img/investigated-models.png)
 
-## Test the Models in Google Colab
+## Try the Models in Colab
 
-If you don't want to deploy the trained model on a Pi, you can still test the system in Colab. First, download one of the pretrained models from these links:
+You can try the system in Colab without deploying the system on a Pi (obviously there won't be the smart light integration). First, download one of the pretrained models from these links:
 
 - [alexnet_tflite_kws_model.h5](https://mega.nz/file/As8FmKaZ#tD19NuM20v6fICTVc9mlnCu96PbMyLs-y9RRCkfl744)
 
@@ -47,7 +44,7 @@ To deploy the trained model you need the TensorFlow Lite inference engine instal
 - `python_speech_features`
 - `importlib`
 
-These can be installed using the `pip` command.
+All these packages can be installed through the `pip` command.
 
 
 ### Yeelight LED Bulb 1S Configuration
@@ -58,10 +55,15 @@ The first step to set up the lightbulb is to download the official app from [Yee
 <a href="https://apps.apple.com/it/app/yeelight/id977125608"><img alt="Download on the App Store" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" height=60px /></a>
 
 
-provision the router's SSID and password to it. After the light is connected to the router, it is visible to any device under the same network. After the configuration procedure is completed, it is possible to enable the third party control protocol directly in the app. This protocol allows the light to be managed locally (LAN connection).
-
+After providing your router's SSID and password to the app, the light will be connected and visible to any device under the same network. After the configuration procedure is completed, it is possible to enable the third party control protocol directly in the app. This protocol allows the light to be managed locally (LAN connection).
 
 ![LAN control enable process](https://github.com/s-gregorini003/tflite-multiclass-speech-recognition/blob/master/img/lan-control-enabling.png)
+
+
+Then, copy the IP address of the lightbulb (which can be found in the light settings of the app) into the *rpi-tflite-audio-provider.py*, specifically replace the string variable `hostname`. Copy the files *rpi-tflite-audio-provider.py* and *nc-message-sender.py* into a directory on the Pi and connect a USB microphone. Finally, open the terminal on the Pi, `cd` to the folder where you copied the files and run the script.
+
+> `python3 rpi-tflite-audio-provider.py`
+
 
 ## Credits
 
@@ -73,4 +75,3 @@ This project was created starting from Shawn Hymel's TensorFlow Lite Tutorials (
 All code in this repository is for demonstration purposes and licensed under [MIT License](https://en.wikipedia.org/wiki/MIT_License).
 
 Distributed as-is. No warranty is given.
-
