@@ -62,7 +62,7 @@ After providing your router's SSID and password to the app, the light will be co
 
 Then, copy the IP address of the lightbulb (which can be found in the light settings of the app) into the *rpi-tflite-audio-provider.py*, specifically replace the string variable `hostname`. Copy the files *rpi-tflite-audio-provider.py* and *nc-message-sender.py* into a directory on the Pi and connect a USB microphone. Finally, open the terminal on the Pi, `cd` to the folder where you copied the files and run the script.
 
-> `python3 rpi-tflite-audio-provider.py`
+`python3 rpi-tflite-audio-provider.py`
 
 
 ## Credits
