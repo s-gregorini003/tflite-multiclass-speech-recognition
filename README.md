@@ -56,7 +56,7 @@ These can be installed using `pip`.
 
 The first step to set up the lightbulb is to download the official app and perform the initial configuration.
 
-[Yeelight](https://www.yeelight.com) App
+#### [Yeelight](https://www.yeelight.com) App
 
 <a href="https://play.google.com/store/apps/details?id=com.yeelight.cherry&hl=it"><img alt="Get it on Google Play" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" height=60px /></a>
 
@@ -78,3 +78,4 @@ This project was created starting from Shawn Hymel's TensorFlow Lite Tutorials (
 All code in this repository is for demonstration purposes and licensed under [MIT License](https://en.wikipedia.org/wiki/MIT_License).
 
 Distributed as-is. No warranty is given.
+
