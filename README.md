@@ -25,6 +25,14 @@ The CNNs selected are [AlexNet](http://papers.nips.cc/paper/4824-imagenet-classi
 
 ## Test the Model in Google Colab
 
+If you don't want to deploy the trained model on a Pi, you can still test the system in Colab. Download one of the models, upload it in Colab `tmp` folder, select the model in the first cell of section 4 run the first cell and all the cells in Section **4 Interactive Testing**
+
+- [alexnet_tflite_kws_model.h5](https://mega.nz/file/As8FmKaZ#tD19NuM20v6fICTVc9mlnCu96PbMyLs-y9RRCkfl744)
+
+- [squeezenet_tflite_kws_model.h5](https://mega.nz/file/81VGla6C#rebzDLHpsvPoANFJB64g7t0J1PKxRftTLd88aU1fo2g)
+
+- [vgg16_tflite_kws_model.h5](https://mega.nz/file/xskTHI6D#xjfoEvst9HWaFQsrBmXjXM_7dQzcf1MCX6TCNhYkoGE)
+
 ## Run Inference on a Raspberry Pi
 
 ### Dependencies
