@@ -13,13 +13,9 @@ This project demonstrates how to use TensorFlow and Keras to train three differe
 
 The dataset used for training and validation is the [Speech Commands Dataset](https://www.tensorflow.org/datasets/catalog/speech_commands). It consists of 105 829 audio samples of 35 different words from 2 618 speakers. The length of the utterances is 1 s, they are recorded with a sample rate of 16 kHz and stored as 16-bit, single channel WAVE files. To train the networks with a less skewed dataset, 70% of the samples from the unselected classes are discarded. Therefore, the training set contains 44 926 audio files divided into 7 classes (6 selected keywords + 1 "unknown word" class).
 
-The keywords are:
-- on
-- off
-- up
-- down
-- bed
-- visual
+The following graph shows the number of samples included in each category, as well as the keywords used for the project.
+
+![Keywords used for the project](https://github.com/s-gregorini003/tflite-multiclass-speech-recognition/blob/master/img/g2891.png)
 
 ## Models
 
