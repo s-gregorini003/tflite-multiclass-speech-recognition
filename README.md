@@ -15,12 +15,13 @@ The dataset used for training and validation is the [Speech Commands Dataset](ht
 
 The following graph shows the number of samples included in each category, as well as the keywords used for the project.
 
-![Keywords used for the project](https://github.com/s-gregorini003/tflite-multiclass-speech-recognition/blob/master/img/g2891.png)
+![Keywords used for the project](https://github.com/s-gregorini003/tflite-multiclass-speech-recognition/blob/master/img/keywords.png)
 
 ## Models
 
 The CNNs selected are [AlexNet](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) (Krizhevsky et al., 2012), [VGG16](https://arxiv.org/pdf/1409.1556.pdf) (Simonyan and Zisserman, 2015) and [SqueezeNet](https://arxiv.org/pdf/1602.07360.pdf) (Iandola et al., 2016). Since they were designed for computer vision, some changes in the models' architecture are made.
 
+![Investigated models architecture](https://github.com/s-gregorini003/tflite-multiclass-speech-recognition/blob/master/img/investigated-models.png)
 
 ## Test the Model in Google Colab
 
