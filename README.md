@@ -9,7 +9,7 @@ This project demonstrates how to use TensorFlow and Keras to train three differe
 
 ## Usage
 
-## Dataset
+### Dataset
 
 The dataset used for training and validation is the [Speech Commands Dataset](https://www.tensorflow.org/datasets/catalog/speech_commands). It consists of 105 829 audio samples of 35 different words from 2 618 speakers. The length of the utterances is 1 s, they are recorded with a sample rate of 16 kHz and stored as 16-bit, single channel WAVE files. To train the networks with a less skewed dataset, 70% of the samples from the unselected classes are discarded. Therefore, the training set contains 44 926 audio files divided into 7 classes (6 selected keywords + 1 "unknown word" class).
 
@@ -17,7 +17,7 @@ The following graph shows the number of samples included in each category, as we
 
 ![Keywords used for the project](https://github.com/s-gregorini003/tflite-multiclass-speech-recognition/blob/master/img/keywords.png)
 
-## Models
+### Models
 
 The CNNs selected are [AlexNet](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) (Krizhevsky et al., 2012), [VGG16](https://arxiv.org/pdf/1409.1556.pdf) (Simonyan and Zisserman, 2015) and [SqueezeNet](https://arxiv.org/pdf/1602.07360.pdf) (Iandola et al., 2016). Since they were designed for computer vision, some changes in the models' architecture are made.
 
@@ -36,9 +36,7 @@ If you don't want to deploy the trained model on a Pi, you can still test the sy
 Then, open the notebook in Colab and upload the ".h5" file into the `/tmp/` folder. In the first cell of section **4 Interactive Testing**, follow the instruction and type the name of the model in the variable `selected_model`. Finally, run the very first cell of the notebook and then all the cells in section 4. 
 
 
-## Run Inference on a Raspberry Pi
-
-### Dependencies
+## Run On-device Inference
 
 To deploy the trained model you need the TensorFlow Lite inference engine installed on your Raspberry Pi. Instructions to do that can be found here: [Python quickstart](https://www.tensorflow.org/lite/guide/python). Additionally, the following Python modules are required:
 
@@ -49,17 +47,14 @@ To deploy the trained model you need the TensorFlow Lite inference engine instal
 - `python_speech_features`
 - `importlib`
 
-These can be installed using `pip`.
+These can be installed using the `pip` command.
 
 
 ### Yeelight LED Bulb 1S Configuration
 
-The first step to set up the lightbulb is to download the official app and perform the initial configuration.
-
-**[Yeelight](https://www.yeelight.com) App**
+The first step to set up the lightbulb is to download the official app from [Yeelight](https://www.yeelight.com) and perform the initial configuration.
 
 <a href="https://play.google.com/store/apps/details?id=com.yeelight.cherry&hl=it"><img alt="Get it on Google Play" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" height=60px /></a>
-
 <a href="https://apps.apple.com/it/app/yeelight/id977125608"><img alt="Download on the App Store" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" height=60px /></a>
 
 
