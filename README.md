@@ -23,15 +23,18 @@ The CNNs selected are [AlexNet](http://papers.nips.cc/paper/4824-imagenet-classi
 
 ![Investigated models architecture](https://github.com/s-gregorini003/tflite-multiclass-speech-recognition/blob/master/img/investigated-models.png)
 
-## Test the Model in Google Colab
+## Test the Models in Google Colab
 
-If you don't want to deploy the trained model on a Pi, you can still test the system in Colab. Download one of the models, upload it in Colab `tmp` folder, select the model in the first cell of section 4 run the first cell and all the cells in Section **4 Interactive Testing**
+If you don't want to deploy the trained model on a Pi, you can still test the system in Colab. First, download one of the pretrained models from these links:
 
 - [alexnet_tflite_kws_model.h5](https://mega.nz/file/As8FmKaZ#tD19NuM20v6fICTVc9mlnCu96PbMyLs-y9RRCkfl744)
 
 - [squeezenet_tflite_kws_model.h5](https://mega.nz/file/81VGla6C#rebzDLHpsvPoANFJB64g7t0J1PKxRftTLd88aU1fo2g)
 
 - [vgg16_tflite_kws_model.h5](https://mega.nz/file/xskTHI6D#xjfoEvst9HWaFQsrBmXjXM_7dQzcf1MCX6TCNhYkoGE)
+
+Then, open the notebook in Colab and upload the ".h5" file into the `/tmp/` folder. In the first cell of section **4 Interactive Testing**, follow the instruction and type the name of the model in the variable `selected_model`. Finally, run the very first cell of the notebook and then all the cells in section 4. 
+
 
 ## Run Inference on a Raspberry Pi
 
